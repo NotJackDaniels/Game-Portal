@@ -1,0 +1,22 @@
+:root{
+	--dk:#343a40;
+	--bl:#00bfff;
+}
+
+
+.Btn{
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+.Btn--dk--outline{
+	background-color: var(--dk);
+    border: 2px solid var(--bl);
+	color:var(--bl);
+}
+
+.Btn--small{
+	padding:  7px 20px;
+	font-size:15px;
+}

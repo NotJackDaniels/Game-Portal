@@ -3,9 +3,9 @@ import logo from '../assets/game-controller.png'
 import {Navbar,Nav,Form,FormControl,Container} from 'react-bootstrap'
 import '../App.css'
 import {Button} from  './Button.js'
-//import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom'
+import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom'
 
-import Home from '../pages/home.js'
+import home from '../pages/home.js'
 //import Favorites from '../Pages/Favorites.js'
 //import Readable from '../Pages/Readable.js'
 //import Contacts from '../Pages/Contacts.js'
@@ -31,9 +31,9 @@ export default class Header extends React.Component {
 						<Navbar.Collapse id="responsive-navbar-nav">
 							<Nav className="mr-auto">
 								 <Nav.Link href="/">Home</Nav.Link>
-								 <Nav.Link href="/favorites">Games</Nav.Link>
-								 <Nav.Link href="/readable">News</Nav.Link>
-								 <Nav.Link href="/contacts">About us</Nav.Link>
+								 <Nav.Link href="/Games">Games</Nav.Link>
+								 <Nav.Link href="/News">News</Nav.Link>
+								 <Nav.Link href="/Contacts">About us</Nav.Link>
 							</Nav>
 							<Form inline>
 								<FormControl
@@ -70,6 +70,14 @@ export default class Header extends React.Component {
 					</Container>
 				</Navbar>
 
+
+
+
+				<Router>
+					<Switch>
+						<Route exact path="/" component={home} />
+					</Switch>
+				</Router>
 
 			
 			</>

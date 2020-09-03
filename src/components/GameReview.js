@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import witcher from '../assets/witcher.jpg'
+import witcher from '../assets/tsushima.png'
 import Cards from './Cards.js'
 import {Container} from 'react-bootstrap'
 

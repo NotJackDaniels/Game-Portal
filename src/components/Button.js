@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import '../styles.css'
 
 const STYLES = [
-	"Btn--dk--outline"
+	"Btn--dk--outline",
+	"Btn--or--outline"
 ];
 
 
@@ -19,7 +20,7 @@ export const Button = ({
 	type,
 	onClick,
     buttonStyle, 
-    buttonSize
+    buttonSize,
 }) => {
 	const checkButtonStyle = STYLES.includes(buttonStyle) 
 	 ? buttonStyle

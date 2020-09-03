@@ -1,8 +1,22 @@
 :root{
-	--dk:#343a40;
-	--bl:#00bfff;
+	--tr:transparent;
+	--dk:rgba(180,180,180,0.5);
+	--rd:#ff4035;
+	--or:#ff8b35;
+	--wt:white;
 }
 
+a{
+	text-decoration: none;
+	color:white;
+}
+a:hover{
+	text-decoration: none;
+	color:white;
+}
+.nv-st{
+	background: rgba(30,30,30,0.7);
+}
 
 .Btn{
 	border-radius: 10px;
@@ -11,9 +25,15 @@
 
 
 .Btn--dk--outline{
-	background-color: var(--dk);
-    border: 2px solid var(--bl);
-	color:var(--bl);
+	background-color: var(--tr);
+    border: 2px solid var(--or);
+	color:var(--or);
+}
+
+.Btn--or--outline{
+	background-color: var(--rd);
+    border: 2px solid var(--wt);
+	color:var(--wt);
 }
 
 .Btn--small{

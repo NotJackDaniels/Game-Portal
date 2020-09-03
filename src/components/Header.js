@@ -4,6 +4,7 @@ import {Navbar,Nav,Form,FormControl,Container} from 'react-bootstrap'
 import '../App.css'
 import {Button} from  './Button.js'
 import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom'
+import '../styles.css'
 
 import home from '../pages/home.js'
 //import Favorites from '../Pages/Favorites.js'
@@ -16,7 +17,7 @@ export default class Header extends React.Component {
 	render() {
 		return (
 			<>
-				<Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+				<Navbar className="fixed-top navbar-inverse nv-st" collapseOnSelect expand="md">
 					<Container>
 						<Navbar.Brand href="/">
 							<img className="img-logo" 
@@ -30,10 +31,10 @@ export default class Header extends React.Component {
 						<Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 						<Navbar.Collapse id="responsive-navbar-nav">
 							<Nav className="mr-auto">
-								 <Nav.Link href="/">Home</Nav.Link>
-								 <Nav.Link href="/Games">Games</Nav.Link>
-								 <Nav.Link href="/News">News</Nav.Link>
-								 <Nav.Link href="/Contacts">About us</Nav.Link>
+								 <Nav.Link style={{color:"white"}} href="/">Home</Nav.Link>
+								 <Nav.Link style={{color:"white"}} href="/Games">Games</Nav.Link>
+								 <Nav.Link style={{color:"white"}} href="/News">News</Nav.Link>
+								 <Nav.Link style={{color:"white"}} href="/Contacts">About us</Nav.Link>
 							</Nav>
 							<Form inline>
 								<FormControl

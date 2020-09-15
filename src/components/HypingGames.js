@@ -82,7 +82,7 @@ export default class HypingGames extends Component {
 
 		return (
 			<>
-				<CardDeck  style={{marginTop:"130px"}}>
+				<CardDeck  style={{marginTop:"130px",marginBottom:"150px"}}>
 					{cardInfo.map(renderCard)}
 						
 				</CardDeck>
